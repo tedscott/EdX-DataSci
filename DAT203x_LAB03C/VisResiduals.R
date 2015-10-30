@@ -40,7 +40,7 @@ ggplot(frame1, aes(Resids)) +
 
 ## Quantile-quantile normal plot of the residuals.
 Resids35 <- frame1[frame1$OverallHeight == 3.5, ]$Resid
-Resids7 <- frame1[frame1$OverallHeigh == 7, ]$Resid
+Resids7 <- frame1[frame1$OverallHeight == 7, ]$Resid
 par(mfrow = c(1,2))
 qqnorm(Resids35)
 qqnorm(Resids7)
